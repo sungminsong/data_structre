@@ -2,8 +2,8 @@
 
 int main()
 {
-	Car		yourCar;
-	//Car myCar(100, "my car", 4);
+	//Car	yourCar;
+	Car yourCar(100, "your car", 4);
 	yourCar.display();
 	yourCar.whereAmI();
 	yourCar.gear = 5;
@@ -15,8 +15,9 @@ int main()
 	myCar.setTurbo(true);
 	myCar.speedUp();
 	myCar.display();
+	myCar.speedUp();
 	myCar.whereAmI();
-	myCar.
+	myCar.display();
 
 
 

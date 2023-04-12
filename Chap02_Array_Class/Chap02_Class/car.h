@@ -9,12 +9,12 @@ private:		// 현재 class 내부에서만 접근 가능
 protected:		// 외부에서 접근불가, 자식class에서는 접근 가능
 	int speed;	// 속력(speed)
 	char name[40];		// 이름
-public:
+public:			//외부 접근 가능
 	
 	int gear;
 	Car() : speed(0), gear(0), name("") {} // 생성자 (Constructor)
 	~Car() {}							   // 소멸자
-		Car(int s, char* n, int g)
+		Car(int s, const char* n, int g)	// 멤버 초기화 리스트
 		: speed(s), gear(g) {
 		strcpy_s(name, n);		// n 문자열을 name에 copy
 	}
